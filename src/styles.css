@@ -74,10 +74,12 @@ body.darkmode {
 
 .header__Section {
     /* display: flex; */
-    height: 70px;
+    /* height: 70px;
     width: 100%;
     position: fixed;
-    z-index: var(--z-header-nav);
+    z-index: var(--z-header-nav); */
+    position: sticky;
+    top: 0;
     box-shadow: var(--shadow-bar);    
 }
 
@@ -88,7 +90,8 @@ body.darkmode {
     /* align-items: center; */
     width: 100%;
     height: 100%;
-    background-color: #000;
+    /* background-color: #000; */
+    background-color: transparent;
 }
 
 .container {
@@ -109,6 +112,7 @@ body.darkmode {
     display: flex;
     justify-content: flex-start;
     background-color: var(--bg);
+    /* background-color: transparent; */
 }
 
 .svg__mostrar {
@@ -140,6 +144,7 @@ body.darkmode {
     width: 100%;
     height: 70px;
     background-color: var(--academlo);
+    /* background-color: transparent; */
     padding: .5rem;
 }
 .iconos__nav{
