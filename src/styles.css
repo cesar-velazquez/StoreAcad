@@ -45,12 +45,15 @@ body {
 .bxs-moon::before {
     color: var(--bg-300);
 }
+
 .bx-cart-alt:before {
     color: var(--bg-300);
 }
+
 .bx-menu:before {
     color: var(--bg-300);
 }
+
 body.darkmode {
     --bg: #000;
     --color: var(--color);
@@ -80,13 +83,13 @@ body.darkmode {
     z-index: var(--z-header-nav); */
     position: sticky;
     top: 0;
-    box-shadow: var(--shadow-bar);    
+    box-shadow: var(--shadow-bar);
 }
 
 .navbar__section {
     /* display: flex; */
-    display: grid;    
-    grid-template-columns: 1fr 1fr;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     /* align-items: center; */
     width: 100%;
     height: 100%;
@@ -147,13 +150,15 @@ body.darkmode {
     /* background-color: transparent; */
     padding: .5rem;
 }
-.iconos__nav{
+
+.iconos__nav {
     display: flex;
-    list-style: none;   
-    gap: 1rem; 
+    list-style: none;
+    gap: 1rem;
 }
+
 .btn_mode {
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 .muestraropa {
@@ -364,4 +369,160 @@ a {
 
 .footer__parrafo a {
     color: var(--bg);
+}
+
+/* INICIA RESPONSIVE 700px */
+@media(min-width:700px) {
+    .container {
+        display: flex;
+        min-height: 70px;
+        height: 70px;
+    }
+
+    .menubar {
+        min-height: 300px;
+        width: 70%;
+    }
+
+    .content {
+        /* background-color: #000000; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 58.2%;
+        height: 830px;
+        padding: 1rem;
+    }
+    .sudadera{
+        width: 250px;
+    }
+
+    .titulo {
+        font-family: var(--titulo);     
+        text-transform: capitalize;   
+        font-size: 47px;
+        font-weight: bold;
+        line-height: 30px;
+        margin: 5% auto;
+        padding: 0;        
+    }
+
+    .subtitulo {
+        font-family: var(--titulo);
+        text-transform: uppercase;
+        font-size: 50px;
+        margin-bottom: 5%;
+        line-height: 60px;
+        padding-left: 1.5rem;
+        font-weight: bold;
+    }
+
+    .parrafo {
+        width: auto;
+        font-size: 1rem;
+        font-family: var(--parrafo);
+        font-weight: bold;
+        color: #afadab;
+        opacity: .5s;        
+        margin-top: 5%;
+        padding: 0 2rem;
+    }
+    .price {
+        font-weight: bold;
+        font-size: 30px;        
+        margin-top: 5%;
+        padding-left: 2rem;
+        color: var(--academlo);
+    }
+    .show__more {
+        width: 150px;
+        height: 55px;
+        font-weight: bold;
+        color: var(--bg-300);
+        font-size: 20px;
+        margin-top: 5%;
+        background-color: var(--color);
+        border: none;
+    }
+    .header__Section {
+        position: sticky;
+        top: 0;
+        box-shadow: var(--shadow-bar);
+        background-color: transparent;
+        /* padding: 0rem 7rem; */
+    }
+
+    #navbar.scrolled {
+        height: calc(var(--h-header) - 50px);
+        box-shadow: var(--shadow-general);
+        background-color: transparent;
+    }
+
+    .primeraMitad {
+        /* width: 49.4%; */
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: flex-start;
+        /* background-color: var(--bg); */
+        background-color: transparent;
+    }
+
+    .segundaMitad {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        /* background-color: var(--academlo); */
+        background-color: transparent;
+        padding: 0.5rem;
+    }
+    .muestraropa {
+        background-color: var(--academlo);
+        height: 900px;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bxs-moon::before {
+        color: var(--color);
+    }
+
+    .bx-cart-alt:before {
+        color: var(--color);
+    }
+
+    .bx-menu:before {
+        color: var(--color);
+    }
+    .btn__products {
+        display: grid;
+        place-items: center;
+        grid-template-areas:
+            "item1 item2 item3 item4";
+        padding: 1rem 3rem;
+        margin: 10% 1%;
+        gap: 0px;
+    }
+    .btn__filtros {
+        width: 112px;
+        min-height: 50px;
+        font-weight: bold;
+        font-size: 14px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1px;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
 }
