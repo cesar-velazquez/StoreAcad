@@ -22,7 +22,7 @@ changeIconHTML.addEventListener('click', function () {
         // console.log((btnFiltros.style.color = "aqua"));
     } else {
         icon.classList.remove('bxs-sun');
-        icon.classList.add('bxs-moon');
+        icon.classList.add('bxs-moon');        
         console.log((rectangulo.style.backgroundColor = "#fd135a"));
         console.log((headerSection.style.backgroundColor = "#fd135a"));
         console.log((btnShowMore.style.color = "#FFFFFF"));
@@ -37,19 +37,10 @@ for (const btn of btnFiltros) {
     GamepadButton.addEventListener("click", fun)
 }
 console.log(btnFiltros.style.backgroundColor = rgb(255, 255, 255));
+// for (let i = 0; i < btnFiltros.length; i++) {
+//     const element = btnFiltros[i];    
+// }
 
-var navbar = document.getElementById('navbar');
-var lastScrollTop = 0;
-
-window.addEventListener('scroll', function () {
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-        navbar.classList.remove('scrolled');
-    } else {
-        navbar.classList.add('scrolled');
-    }
-
-    lastScrollTop = scrollTop;
-});
+// console.log((btnFiltros.style.color = "aqua"));
+// console.log((btnFiltros.style.color = "#000"));
 
